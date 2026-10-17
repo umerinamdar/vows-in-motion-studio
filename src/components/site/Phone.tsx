@@ -34,9 +34,7 @@ export function Phone({
               light ? "text-invite-light" : "text-invite-dark",
             )}
           >
-            <p className="text-[clamp(5px,1.6cqw,9px)] font-semibold uppercase tracking-[0.3em] opacity-80 [container-type:inline-size]">
-              <span className="text-[0.5rem] sm:text-[0.55rem]">Together with their families</span>
-            </p>
+            <p className="text-[0.45rem] font-semibold uppercase tracking-[0.28em] opacity-80">Together with their families</p>
             <h3 className="mt-[8%] font-display text-[1.35rem] italic leading-[0.95] sm:text-[1.6rem]">
               {design.couple[0]}
               <span className="my-1 block font-display text-[0.8rem] not-italic opacity-70">&amp;</span>

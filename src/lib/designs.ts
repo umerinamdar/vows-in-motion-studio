@@ -33,11 +33,10 @@ const raw: Omit<Design, "slug">[] = [
   { title: "Jharokha", tagline: "Carved windows, framed in blooms", image: inv1, tone: "dark", couple: ["Pari", "Aarav"], date: "30 · 11 · 2026", reveal: "Palace doors", category: "Royal" },
   { title: "Hariyali", tagline: "Lush green for a mehendi evening", image: inv2, tone: "light", couple: ["Avni", "Vivaan"], date: "16 · 01 · 2027", reveal: "Curtain rise", category: "Traditional" },
   { title: "Saanjh", tagline: "Quiet, modern, beautifully soft", image: inv3, tone: "dark", couple: ["Ira", "Shaurya"], date: "08 · 03 · 2027", reveal: "Scratch card", category: "Modern" },
-  { title: "Lal Jodа", tagline: "A bride's red, in silk and gold", image: inv4, tone: "light", couple: ["Ahana", "Rudra"], date: "24 · 02 · 2027", reveal: "Envelope", category: "Traditional" },
+  { title: "Lal Joda", tagline: "A bride's red, in silk and gold", image: inv4, tone: "light", couple: ["Ahana", "Rudra"], date: "24 · 02 · 2027", reveal: "Envelope", category: "Traditional" },
 ];
 
 export const designs: Design[] = raw.map((d) => ({
   ...d,
-  title: d.title.replace("а", "a"),
   slug: d.title.toLowerCase().replace(/[^a-z]+/g, "-"),
 }));
