@@ -4,7 +4,7 @@ import { designs, type Design } from "@/lib/designs";
 import { Phone } from "./Phone";
 
 export function Hero() {
-  const [a, b, c] = [designs[0], designs[3], designs[5]];
+  const [a, b, c] = [designs[0]!, designs[3]!, designs[5]!];
   return (
     <section className="grain overflow-hidden">
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 pb-20 pt-14 md:px-10 lg:grid-cols-[1.05fr_1fr] lg:pb-28 lg:pt-20">
